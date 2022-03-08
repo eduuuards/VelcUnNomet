@@ -9,6 +9,7 @@ public class Objekti : MonoBehaviour {
 	public GameObject atkritumuMasina;
 	public GameObject atraPalidziba;
 	public GameObject autobuss;
+	public GameObject b2;
 
 	//Uzglaba velkamo objektu sakotnejas atrasanas vietas koordinatas
 	[HideInInspector]
@@ -17,6 +18,8 @@ public class Objekti : MonoBehaviour {
 	public Vector2 atroKoord;
 	[HideInInspector]
 	public Vector2 bussKoord;
+	[HideInInspector]
+	public Vector2 b2Koord;
 
 	//Uzglabas audio avotu kura atskanot attelu skanas efektus
 	public AudioSource skanasAvots;
@@ -33,6 +36,7 @@ public class Objekti : MonoBehaviour {
 		atkrKoord = atkritumuMasina.GetComponent<RectTransform>().localPosition;
 		atroKoord = atraPalidziba.GetComponent<RectTransform>().localPosition;
 		bussKoord = autobuss.GetComponent<RectTransform>().localPosition;
+		b2Koord = b2.GetComponent<RectTransform>().localPosition;
 	}
 	
 	// Update is called once per frame

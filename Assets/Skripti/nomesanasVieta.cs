@@ -54,6 +54,10 @@ public class nomesanasVieta : MonoBehaviour, IDropHandler {
 					case "Skola":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot[3]);
 						break;
+					case "b2tag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot[4]);
+						break;
+					
 
 					default:
 						Debug.Log ("Nedefinets tags!");
@@ -80,6 +84,10 @@ public class nomesanasVieta : MonoBehaviour, IDropHandler {
 				case "Skola":
 					objektuSkripts.autobuss.GetComponent<RectTransform> ().localPosition
 					= objektuSkripts.bussKoord;
+					break;
+				case "b2tag":
+					objektuSkripts.b2.GetComponent<RectTransform> ().localPosition
+					= objektuSkripts.b2Koord;
 					break;
 
 				default:

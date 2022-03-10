@@ -41,6 +41,7 @@ public class DragDropSkripts : MonoBehaviour, IPointerDownHandler, IBeginDragHan
 	}
 	public void OnEndDrag(PointerEventData notikums){
 		Debug.Log ("Beigta objekta vilkśana");
+		objektuSkripts.pedejaisVilktais = notikums.pointerDrag;
 		kanvasGrupa.alpha = 1f;
 
 		//Ja objekts nebija nolikts istaja vieta

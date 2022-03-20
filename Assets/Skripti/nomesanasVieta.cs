@@ -57,6 +57,15 @@ public class nomesanasVieta : MonoBehaviour, IDropHandler {
 					case "b2tag":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot[4]);
 						break;
+					case "CementaMasinaTag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot[5]);
+						break;
+					case "e46Tag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot[6]);
+						break;
+					case "Policija":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot[7]);
+						break;
 					
 
 					default:
@@ -76,7 +85,6 @@ public class nomesanasVieta : MonoBehaviour, IDropHandler {
 					objektuSkripts.atkritumuMasina.GetComponent<RectTransform> ().localPosition
 					= objektuSkripts.atkrKoord;
 					break;
-
 				case "Slimnica":
 					objektuSkripts.atraPalidziba.GetComponent<RectTransform> ().localPosition
 					= objektuSkripts.atroKoord;
@@ -88,6 +96,18 @@ public class nomesanasVieta : MonoBehaviour, IDropHandler {
 				case "b2tag":
 					objektuSkripts.b2.GetComponent<RectTransform> ().localPosition
 					= objektuSkripts.b2Koord;
+					break;
+				case "CementaMasinaTag":
+					objektuSkripts.CementaMasina.GetComponent<RectTransform> ().localPosition
+					= objektuSkripts.CementaMasinaKoord;
+					break;
+				case "e46Tag":
+					objektuSkripts.e46.GetComponent<RectTransform> ().localPosition
+					= objektuSkripts.e46Koord;
+					break;
+				case "Policija":
+					objektuSkripts.Policija.GetComponent<RectTransform> ().localPosition
+					= objektuSkripts.PolicijaKoord;
 					break;
 
 				default:

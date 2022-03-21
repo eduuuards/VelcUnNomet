@@ -66,6 +66,9 @@ public class nomesanasVieta : MonoBehaviour, IDropHandler {
 					case "Policija":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot[7]);
 						break;
+					case "EskavatorsTag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot[8]);
+						break;
 					
 
 					default:
@@ -108,6 +111,10 @@ public class nomesanasVieta : MonoBehaviour, IDropHandler {
 				case "Policija":
 					objektuSkripts.Policija.GetComponent<RectTransform> ().localPosition
 					= objektuSkripts.PolicijaKoord;
+					break;
+				case "EskavatorsTag":
+					objektuSkripts.Eskavators.GetComponent<RectTransform> ().localPosition
+					= objektuSkripts.EskKoord;
 					break;
 
 				default:

@@ -5,7 +5,7 @@ Unity 2D Spēle, kas nodrošina objektu vilkšanu, nolikšanu
 - [x] Speles ainas iekartosana
 - [x] Objektu vilkšanas nodrosināšana
 - [x] Objektu novietošanas (pareizi/nepareizi) nodrošināšana
-- [ ] Objektu rotācijas iespēju integŗešana
-- [ ] Objektu izmēra maiņas iespēju integrēšana
+- [x] Objektu rotācijas iespēju integŗešana
+- [x] Objektu izmēra maiņas iespēju integrēšana
 - [ ] Laika atskaites integrēšana
 - [ ] Punktu sistēmas ieviešana

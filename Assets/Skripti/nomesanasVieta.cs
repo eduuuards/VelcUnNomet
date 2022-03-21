@@ -72,6 +72,12 @@ public class nomesanasVieta : MonoBehaviour, IDropHandler {
 					case "Traktors1Tag":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot[9]);
 						break;
+					case "Traktors5Tag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot[10]);
+						break;
+					case "UgunsdzesejiTag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot[11]);
+						break;
 					
 
 					default:
@@ -122,6 +128,14 @@ public class nomesanasVieta : MonoBehaviour, IDropHandler {
 				case "Trak1Tag":
 					objektuSkripts.Traktors1.GetComponent<RectTransform> ().localPosition
 					= objektuSkripts.Trak1Koord;
+					break;
+				case "Trak5Tag":
+					objektuSkripts.Traktors5.GetComponent<RectTransform> ().localPosition
+					= objektuSkripts.Trak5Koord;
+					break;
+				case "UgunsdzesejiTag":
+					objektuSkripts.Ugunsdzeseji.GetComponent<RectTransform> ().localPosition
+					= objektuSkripts.UgunsKoord;
 					break;
 
 				default:
